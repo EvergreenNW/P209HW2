@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+        3 radio buttons
+            pizza size
+                small
+                medium
+                large
+        dropdown feature (a select)
+            no toppings
+            one topping
+            two toppings
+        submit button
+    -->
+    <h1>Customize your Pizza</h1>
 
+    <div id="size">
+        <h2>Size</h2>
+        <label id="correct">Was your order correct?</label>
+        <label for="yes">Yes</label>
+        <input type="radio" value = "yes" id="yes" onclick="handleClick(this);">
+        <label for="no">No</label>
+        <input type="radio" value ="no" id="no" onclick="handleClick(this);">
+  
+    </div>
+
+    <div id="toppings">
+        <h2>Toppings</h2>
+        <select name="ordertype" id="ordertype" size="1">
+            <option value="Carry Out"> Carry out</option>
+            <option value="Delivered" selected="selected"> Delivery</option>
+            <option value="Dine In"> Dine in</option>
+     </select>
+
+    </div>
+
+    <div id="submit">
+        <h2>Submit</h2>
+        <button id="button" onclick="calculate()">Submit</button>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
