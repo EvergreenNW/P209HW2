@@ -9,39 +9,37 @@
 <body>
 
   <form onsubmit="return false">
-
-    <fieldset id="custInfo">
+    <fieldset id="pizzaCustomizer">
       
       <legend><h2>Customize your Pizza</h2></legend>
 
       <label id="size">What size would you like your pizza?</label>
       <label for="small">Small</label>
-      <input type="radio" name="size" value = "small" id="small" onclick="size(this);">
-      <label for="medium">Medium</label>
-      <input type="radio" name="size" value ="medium" id="medium" onclick="size(this);">
-      <label for="large">Large</label>
-      <input type="radio" name="size" value ="large" id="large" onclick="size(this);">
+      <input type="radio" name="size" value=7>
       
-      <br>
+      <label for="medium">Medium</label>
+      <input type="radio" name="size" value=10>
+      
+      <label for="large">Large</label>
+      <input type="radio" name="size" value=14>
+      
+      <br><br>
 
       <label for="toppings">How many toppings would you like?</label>
       <select name="toppings" id="toppings" size="1">
-        <option value="None"> None</option>
-        <option value="One" selected="selected"> One topping</option>
-        <option value="Two"> Two toppings</option>
+        <option value=0> None</option>
+        <option value=2 selected="selected"> One topping</option>
+        <option value=3> Two toppings</option>
       </select>
       
-      <br>
+      <br><br>
 
       <button onclick="calculate()">Submit</button>
 
-    </fieldset>
-  </form>
-
-  <div id="total">
       <h3>Your Total is: </h3>
       
-  </div>
+    </fieldset>
+  </form>
 
 
   
